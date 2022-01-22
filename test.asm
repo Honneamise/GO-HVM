@@ -1,0 +1,31 @@
+#test program
+
+		JMP MAIN
+
+PRINT:
+		LDI R0 43
+		MOV R0
+		BUSW
+
+		LDI R0 49
+		MOV R0	
+		BUSW
+
+		LDI R0 41
+		MOV R0
+		BUSW
+
+		LDI R0 4F
+		MOV R0
+		BUSW
+
+		RET
+
+MAIN:	CALL PRINT
+
+		LDI RA 0A
+		MOV RA
+		BUSW
+
+		HALT
+
